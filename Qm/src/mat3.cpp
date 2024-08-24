@@ -5,9 +5,9 @@ namespace Qm
 	template<typename T>
 	matrix<3, 3, T>::matrix()
 	{
-		m[0] = vector<3,T>(1, 0, 0);
-		m[1] = vector<3,T>(0, 1, 0);
-		m[2] = vector<3,T>(0, 0, 1);
+		m[0][0] = 1;
+		m[1][1] = 1;
+		m[2][2] = 1;
 	}
 	template<typename T>
 	matrix<3, 3, T>::matrix(T s)
