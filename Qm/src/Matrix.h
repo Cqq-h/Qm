@@ -6,6 +6,27 @@ namespace Qm
 	template<size_t x, size_t y, typename T>
 	struct matrix;
 };
+namespace Qm
+{
+	template<typename T>
+	struct matrix<2, 2, T>
+	{
+		vector<2, T> m[2];
+
+		vector<2, T>& operator[](uint64_t i);
+		const vector<2, T>& operator[](uint64_t i) const;
+
+		matrix();
+		matrix(T s);
+		matrix(vector<2, T> v1, vector<2, T> v2);
+
+		vector<2, T> operator*(vector<2, T> const& other) const;
+		matrix<2, 2, T> operator*(matrix<2, 2, T> const& other) const;
+		matrix<2, 2, T>& operator*=(matrix<2, 2, T> const& other);
+	};
+	using mat2 = matrix<2, 2, long double>;
+};
+std::ostream& operator<<(std::ostream& out, Qm::mat2 const& data);
 
 namespace Qm
 {
@@ -27,6 +48,8 @@ namespace Qm
 	};
 	using mat3 = matrix<3,3,long double>;
 };
+std::ostream& operator<<(std::ostream& out, Qm::mat3 const& data);
+
 namespace Qm
 {
 	template<typename T>
@@ -42,9 +65,9 @@ namespace Qm
 		matrix(vector<4, T> v1, vector<4, T> v2, vector<4, T> v3, vector<4, T> v4);
 
 		vector<4, T> operator*(vector<4, T> const& other) const;
-		matrix<4, 4, T> operator*(matrix<3, 3, T> const& other) const;
+		matrix<4, 4, T> operator*(matrix<4, 4, T> const& other) const;
 		matrix<4, 4, T>& operator*=(matrix<4, 4, T> const& other);
 	};
-	using mat3 = matrix<4, 4, long double>;
+	using mat4 = matrix<4, 4, long double>;
 };
-std::ostream& operator<<(std::ostream& out, Qm::mat3 const& data);
+std::ostream& operator<<(std::ostream& out, Qm::mat4 const& data);

@@ -76,6 +76,6 @@ namespace Qm
 
 std::ostream& operator<<(std::ostream& out, Qm::mat4 const& data)
 {
-	out << "\n" << data[0] << "\n" << data[1] << "\n" << data[2];
+	out << "\n" << data[0] << "\n" << data[1] << "\n" << data[2]<< "\n" << data[3];
 	return out;
 }

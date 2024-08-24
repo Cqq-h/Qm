@@ -173,7 +173,7 @@ std::ostream& operator<<(std::ostream& out, Qm::vector<4, T> const& data);
 template<typename T>
 inline std::ostream& operator<<(std::ostream& out, Qm::vector<4, T> const& data)
 {
-    out << data.x << ", " << data.y << ", " << data.z;
+    out << data.x << ", " << data.y << ", " << data.z << ", " << data.w;
     return out;
 };
 
