@@ -28,6 +28,23 @@ void exsample()
 	Qm::mat4 bm4 = Qm::mat4(2.0f);
 	std::cout << "bm4 = " << bm4 << std::endl;
 
+	std::cout << '\n' << "vector multiplication" << std::endl;
+	std::cout << "av2 * bv2 = " << av2 * bv2 << std::endl;
+	std::cout << "av3 * bv3 = " << av3 * bv3 << std::endl;
+	std::cout << "av4 * bv4 = " << av4 * bv4 << std::endl;
+
+	std::cout << '\n' << "matrix multiplication" << std::endl;
+	std::cout << "am2 * bm2 = " << am2 * bm2 << std::endl;
+	std::cout << "am3 * bm3 = " << am3 * bm3 << std::endl;
+	std::cout << "am4 * bm4 = " << am4 * bm4 << std::endl;
+
+	std::cout << '\n' << "matrix vector multiplication" << std::endl;
+	std::cout << "am2 * av2 = " << am2 * av2 << std::endl;
+	std::cout << "bm2 * bv2 = " << bm2 * bv2 << std::endl;
+	std::cout << "am3 * av3 = " << am3 * av3 << std::endl;
+	std::cout << "bm3 * bv3 = " << bm3 * bv3 << std::endl;
+	std::cout << "am4 * av4 = " << am4 * av4 << std::endl;
+	std::cout << "bm4 * bv4 = " << bm4 * bv4 << std::endl;
 }
 
 int main() {

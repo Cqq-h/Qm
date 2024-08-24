@@ -39,7 +39,7 @@ namespace Qm
         vector<2, T>& operator-=(const vector<2, T>& other);
 
         T operator*(const vector<2, T>& other) const;
-
+        
         vector<2, T> operator/(T scale) const;
         vector<2, T>& operator/=(T scale);
 
