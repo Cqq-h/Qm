@@ -1,4 +1,4 @@
-project "exsample"
+project "exsamples"
       kind "ConsoleApp"
       language "C++"
       staticruntime "off"
@@ -13,13 +13,15 @@ project "exsample"
       }
       includedirs 
       {
-      "%{prj.name}/vendor/",
-      "%{wks.location}/Qm/src/"
+         "%{prj.name}/vendor/",
+         "%{wks.location}/Qm/src/"
       }
+   
       links 
       {
-      "Qm"
+         "Qm"
       }
+
       filter "system:windows"
          cppdialect "C++20"
          systemversion "latest"
