@@ -1,8 +1,9 @@
 #pragma once
 #include <iostream>
-
+#define EXPEREMENTALLIBS
 #ifdef EXPEREMENTALLIBS
 #define STDFUCLIB Qm
+#include "EXPEREMENTALLIBS/smath.h"
 #else
 #define STDFUCLIB std
 #define _USE_MATH_DEFINES
