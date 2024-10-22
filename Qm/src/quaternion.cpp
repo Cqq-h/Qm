@@ -39,7 +39,7 @@ namespace Qm
 		}
 		else
 		{
-			tempa = (angle / 180) * M_PI;
+			tempa = (angle / 180) * PI;
 		}
 		m_Real = std::cos(tempa);
 		m_Imaginary = (vector<3, T>(i, j, k) / vector<3, T>(i, j, k).mag()) * std::sin(tempa);
