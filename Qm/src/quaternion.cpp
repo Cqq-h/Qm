@@ -1,4 +1,4 @@
-#include "quaternion.h"
+#include "Quaternion.h"
 
 namespace Qm
 {
@@ -90,7 +90,7 @@ namespace Qm
 			- i() * other.i()
 			- j() * other.j()
 			- k() * other.k();
-		T î = m_Real * other.i()
+		T ï¿½ = m_Real * other.i()
 			+ i() * other.m_Real
 			+ j() * other.k()
 			- k() * other.j();
@@ -102,7 +102,7 @@ namespace Qm
 			+ k() * other.m_Real
 			+ i() * other.j()
 			- j() * other.i();
-		return quaterniont(real, î, jHat, kHat, m_Unit * other.m_Unit);
+		return quaterniont(real, ï¿½, jHat, kHat, m_Unit * other.m_Unit);
 	}
 
 	template<typename T>
