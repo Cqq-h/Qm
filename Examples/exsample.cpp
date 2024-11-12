@@ -1,6 +1,7 @@
 #include "Qm.h"
 
 void exsample()
+
 {
 	Qm::vec2 av2 = Qm::vec2(1.0f, 2.0f);
 	std::cout << "av2 = " << av2 << std::endl;
@@ -28,6 +29,8 @@ void exsample()
 	Qm::mat4 bm4 = Qm::mat4(2.0f);
 	std::cout << "bm4 = " << bm4 << std::endl;
 
+	Qm::quaternion m(PI, 1, 1, 1, 0, 1);
+	std::cout << m;
 	std::cout << '\n' << "vector multiplication" << std::endl;
 	std::cout << "av2 * bv2 = " << av2 * bv2 << std::endl;
 	std::cout << "av3 * bv3 = " << av3 * bv3 << std::endl;

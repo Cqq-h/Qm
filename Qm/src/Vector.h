@@ -1,6 +1,5 @@
 #pragma once
-#include <cmath>
-#include <iostream>
+#include "Includes.h"
 
 namespace Qm
 {

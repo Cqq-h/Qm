@@ -23,7 +23,7 @@ namespace Qm
     template<typename T>
     T vector<4, T>::mag() const
     {
-        return std::sqrt(mag2());
+        return STDFUCLIB::sqrt(mag2());
     }
 
     template<typename T>

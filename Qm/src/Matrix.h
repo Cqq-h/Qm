@@ -1,4 +1,5 @@
 #pragma once
+#include "Includes.h"
 #include "Vector.h"
 
 namespace Qm
