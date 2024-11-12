@@ -7,4 +7,4 @@ workspace "Qm"
    }
 
 include "Qm"
-include "exsamples"
+include "Examples"
