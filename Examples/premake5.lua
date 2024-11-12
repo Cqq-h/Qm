@@ -1,4 +1,4 @@
-project "exsamples"
+project "Exsamples"
       kind "ConsoleApp"
       language "C++"
       staticruntime "off"
