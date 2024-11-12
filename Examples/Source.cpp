@@ -1,12 +1,12 @@
 ﻿#include <iostream>
-#include "quaternion.h"
+#include "Qm.h"
 
 void testQuaternion() {
     // Create some quaternion objects
     Qm::quaternion q1(1.0, Qm::vec3(0.0, 1.0, 0.0), true);
     Qm::quaternion q2(0.0, Qm::vec3(1.0, 0.0, 0.0), false);
     Qm::quaternion q3(0.5, 0.5, 0.5, 0.5, true);
-    Qm::quaternion q4(M_PI / 4, 1.0, 0.0, 0.0, true, true);
+    Qm::quaternion q4(Qm::PI / 4, 1.0, 0.0, 0.0, true, true);
 
     // Test magnitude functions
     std::cout << "q1 magnitude: " << q1.mag() << std::endl;
