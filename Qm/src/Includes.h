@@ -1,13 +1,12 @@
 #pragma once
 #include <iostream>
-#define EXPEREMENTALLIBS
 #ifdef EXPEREMENTALLIBS
-#define STDFUCLIB Qm
-#include "EXPEREMENTALLIBS/smath.h"
+	#define STDFUCLIB Qm
+	#include "EXPEREMENTALLIBS/smath.h"
 #else
-#define STDFUCLIB std
-#define _USE_MATH_DEFINES
-#include <cmath>
+	#define STDFUCLIB std
+	#define _USE_MATH_DEFINES
+	#include <cmath>
 #endif // DEBUG
 namespace Qm
 {
