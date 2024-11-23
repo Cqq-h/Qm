@@ -1,15 +1,16 @@
 #include "Trigonometry.h"
 
+
 namespace Qm
 {
     double cos(double x)
     {
-        double Rangex = std::fmod(std::abs(x), (2 * PI));
+        double Rangex = std::fmod(std::abs(x), (2 * QM_PI));
         int signe = 1;
-        if (Rangex > (PI / 2))
+        if (Rangex > (QM_PI / 2))
         {
             signe = -1;
-            Rangex = (PI - Rangex);
+            Rangex = (QM_PI - Rangex);
         }
         return ((double)signe * (1
             - (pow(Rangex, 2) / 2)
@@ -23,6 +24,6 @@ namespace Qm
 
     double sin(double x)
     {
-        return cos(x - PI / 2);
+        return cos(x - QM_PI / 2);
     }
 }

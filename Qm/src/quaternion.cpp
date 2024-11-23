@@ -39,7 +39,7 @@ namespace Qm
 		}
 		else
 		{
-			tempa = (angle / 180) * PI;
+			tempa = (angle / 180) * QM_PI;
 		}
 		m_Real = std::cos(tempa);
 		m_Imaginary = (vector<3, T>(i, j, k) / vector<3, T>(i, j, k).mag()) * std::sin(tempa);
@@ -90,7 +90,7 @@ namespace Qm
 			- i() * other.i()
 			- j() * other.j()
 			- k() * other.k();
-		T � = m_Real * other.i()
+		T iHat = m_Real * other.i()
 			+ i() * other.m_Real
 			+ j() * other.k()
 			- k() * other.j();
@@ -102,7 +102,7 @@ namespace Qm
 			+ k() * other.m_Real
 			+ i() * other.j()
 			- j() * other.i();
-		return quaterniont(real, �, jHat, kHat, m_Unit * other.m_Unit);
+		return quaterniont(real, iHat, jHat, kHat, m_Unit * other.m_Unit);
 	}
 
 	template<typename T>

@@ -8,7 +8,5 @@
 	#define _USE_MATH_DEFINES
 	#include <cmath>
 #endif // DEBUG
-namespace Qm
-{
-#define PI 3.14159265359
-}
+
+#define QM_PI 3.14159265359
